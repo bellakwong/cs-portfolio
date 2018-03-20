@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bella Kwong</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+</head>
+
+<body>
+<div style="background-color: #cceeff">
+    <br>
+<!-- Header Name -->
+    <h1><center>How To - About Me</center></h1>
+    
+<!-- NavBar Links-->
+    <ul class="navbar">
+        <a href="index.html"> <li>About Me</li> </a>
+        <a href="howtoaboutme.html"><li>How To - About Me</li></a>
+        <a href="generativeArt.html"><li>Generative Art</li></a>
+        <a href="howToGenArt.html"><li>How To - Generative Art</li></a>
+    </ul>
+    
+<!-- Hello -->
+    <p><br>
+    For this project, I created a personal "About Me" webpage. I created 
+    this page by adding a navigation bar, headers, paragraph, clickable images, 
+    unordered lists and formatting. These elements include HTML and CSS. I will be 
+    highlighting a few elements in my code to show you how to add these so that 
+    you can make you own site too.
+    </p><br>
+    
+<!-- Nav Bar Title -->
+        <h2><u>Navigation Bar</u></h2>
+<!-- Navigation Bar -->
+    <div class="leftside">
+       <img src="https://image.ibb.co/meV8qb/Screenshot_2017_10_11_at_9_34_09_AM.png" width="600px">
+    </div>
+
+    <div class="rightside">
+        <p>To make the navigation bar, I made a CSS file called <code>navbar.css</code>. The code
+        in <code>.navbar { </code> programs the color of the navigation bar and the way that
+        the buttons are aligned. I wanted the navigation bar to be grey because of the 
+        color scheme of blue and grey. Because I only have two buttons, I wanted them 
+        to be centered.
+        <br> The code in <code>.navbar a{</code> programs the buttons. The 
+        <code>display: inline-block; </code>makes sure that if the buttons fit on one line next to 
+        eachother, they would appear on the same line. I used this because I wanted the 
+        navigation bar to be one horizontal line rather than a vertical bar. The code
+        <code>color: black;</code> makes the text color of the buttons, like "About Me," black. I 
+        chose black because I wanted to make the text visible on the white button 
+        background.
+        <br> <code>.navbar a:hover{</code> controls how the button looks when you 
+        hover your mouse over it. In this case, since the code is
+        <code>background-color: #e6e6e6;</code>, the button turn grey when you hover over it.
+        </p>
+    </div>
+    
+<!-- Part 2 of the navigation bar -->
+    <div class="leftside">
+        <a href="https://goo.gl/PYFQ8i" target="_blank"><img src="https://image.ibb.co/jFPq3w/Screenshot_2017_10_11_at_9_09_14_AM.png" width="600px"></a>
+         <p>Click the image to see an enlargement of the screenshot</p>
+    </div>    
+        
+    <div class="rightside">
+        <p>In the photo to the left, I used the <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;navbar.css&quot; type=&quot;text/css&quot; /&gt;</code>
+        code to link that file to the main "About Me" page, which I called <code>index.html.</code>
+        </p>
+    </div>
+    
+<!-- Headers and Text -->
+    <br><h2><u>Headers and Text</u></h2>
+    <div class="leftside">
+        <img src="https://goo.gl/QPS9PA" width="600px">
+    </div>
+    <div class="rightside">
+        <p> When making headers, you use the header tag. There are 6 sizes with the first 
+        being the biggest, and the sixth being the smallest. In this photo, I used the 
+        second biggest header, the <code>&lt;h2&gt;</code> tag. I chose to use 
+        <code>&lt;h2&gt;</code> because my <code>&lt;h1&gt;</code> was the top header 
+        abve the navigation bar that read "Bella Kwong."</p>
+        <h3>This is an Example of a Header</h3>
+        <p>When making texts or paragraphs, you need to have <code>&lt;p&gt;</code>
+        tags. This tag makes text appear on the screen. I used this because I wanted
+        to add details about myself, my hobbies, and what I've learned.</p>
+    </div>
+
+<!-- Clickable Images -->
+    <br><h2><u>Clickable Images</u></h2>
+    <div class="leftside">
+        <a href="https://goo.gl/ExuP1v" target="_blank"><img src="https://goo.gl/ExuP1v" width="600px"></a>
+        <p>Click the image to see an enlargement of the screenshot</p>
+        <p>This is an example of a clickable image</p>
+    </div>
+    <div class="rightside">
+        <p>One specific feature I learned how to do and will remember is making a clickable image. I will 
+        remember how to make these because of how cool and useful they can be. When making clickable 
+        images, you add a link tag and an image tag together. A link tag looks like 
+        <code>&lt;a href=&quot;add link here&quot; target=&quot;_blank&quot;&gt;What you want the link to be called&lt;/a&gt;</code>. 
+        This makes text clickable so that it leads to another page. An image tag looks like 
+        <code>&lt;img src=&quot;image URL here&quot;&gt;</code>. <code>&lt;a href&gt;</code> means 
+        hyperlink reference. <code>target=&quot;_blank&quot;</code> opens up the link in a new tab 
+        rather than that same one. If you want a clickable image that leads to another page, you put 
+        the image tag in the part of the link tag that says "What you want the link to be called." 
+        It should look like this:
+        <code>&lt;a href=&quot;Add link here&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;image URL here&quot;&gt;&lt;/a&gt;</code>. 
+        In the photo to the left, you can see that I made it so that when you click on an image, 
+        which are the sketches under Hobbies and Interests, it leads you to my art 
+        Instagram account. I decided to make it linked because I wanted to emphasize how art 
+        is my hobby and if yu want to see more, you can.
+        </p>
+    </div>
+    
+<!-- Unordered Lists -->
+    <br><h2><u>Unordered Lists</u></h2>
+    <div class= "leftside">
+        <img src="https://goo.gl/HhRPcA" width="600px">
+    </div>
+    <div class="rightside">
+        <p>
+            When making an unordered list, you have to have a set of unordered list tags, 
+            which are <code>&lt;ul&gt;/&lt;/ul&gt;</code>. Inside of that you have to have 
+            list item tags, which are <code>&lt;li&gt;/&lt;li&gt;</code>. Inside the list 
+            item tags, you have to write what you want in bullet points. For example, for 
+            the "What I've Learned" section, I used the code <code>&lt;li&gt;Headers&lt;li&gt;</code>
+            to get "Headers" in a bullet pointed list. I used bullet points rather than 
+            paragraphs because I wanted this section to be easy to read and easily able to 
+            add more items as I learn more in HTML and CSS.
+        </p>
+        <ul>
+            <li>This is an example of an unordered list</li>
+            <li>It has bullet points!</li>
+            <li>Wooooow!</li>
+        </ul>
+    </div>
+    
+<!-- Formatting and Design-->    
+    <br><h2><u>Formatting with CSS</u></h2>
+    <div class="leftside">
+        <img src="https://goo.gl/yZ3KAE" width="600px">
+    </div>
+    <div class="rightside">
+        <p>When formatting elements of your webpage, you have to use CSS. I created a 
+        new CSS file called <code>index.css</code>. Anything in the <code>body {</code>,
+        affects the entire page. An example of what you can use this for is for changing 
+        the font with the code <code>font-family: Open Sans;</code>. I decided to 
+        make the font on my page Open Sans because that's one of my favorite fonts. 
+        
+        <br>I wanted to have my "Hobbies and Interests" and "What I've Learned" on
+        the right and "About Me" on the left. I wanted to format my site this way 
+        to make the webpage easy to navigate. I have the code <code>.leftside{</code> 
+        and <code>.rightside{</code> to divide the page in half and into sections. 
+        All the things I wanted on the left and right side are wrapped in their 
+        according divs. Another example of this formatting is how on this page all my
+        text and explanations are on the right with the photos on the left.
+        </p>
+    </div>
+    
+    
+    
+<!-- Don't delete the stuff below -->
+    <br>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body{
+    font-family: Open Sans;
+    background-color: #e7f5fe;
+    margin: 75px 100px;
+    border: 40px double #cceeff;
+    border-radius: 40px;
+}
+
+.leftside{
+    display: inline-block;
+    padding: 7px 15px;
+    width: 50%;
+    vertical-align: top;
+}
+
+
+.leftside img{
+    max-width: 100%;
+}
+
+
+.rightside{
+    display: inline-block;
+    width: 42%;
+    vertical-align: top;
+    border: 5px solid #999999;
+    padding: 7px 15px;
+} 
+
+.art{
+    display: inline-block;
+}
+
+
+
+
+

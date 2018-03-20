@@ -1,0 +1,30 @@
+body{
+    font-family: Open Sans;
+    background-color: #5ca5fc;
+    margin: 100px;
+}
+
+
+.topIntro{
+    text-align: center;
+    border: 20px double #666666;
+    border-radius: 100px;
+    padding: 8px 20px;
+    margin: 20px;
+    background-color: #6aabfb;
+}
+
+.leftSide{
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    padding: 7px 15px;
+}
+
+.rightSide{
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    padding: 7px 15px;
+}
+

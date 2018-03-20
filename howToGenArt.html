@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="howToGenArt.css" type="text/css" />
+    <link rel="stylesheet" href="GAnavBar.css" type="text/css" />
+    <title>How To Generative Art</title>
+</head>
+<body>
+    <!-- NavBar Links-->
+    <ul class="navbar">
+        <a href="index.html"> <li>About Me</li> </a>
+        <a href="howtoaboutme.html"><li>How To - About Me</li></a>
+        <a href="generativeArt.html"><li>Generative Art</li></a>
+        <a href="howToGenArt.html"><li>How To - Generative Art</li></a>
+    </ul>
+    
+    
+    <!-- Top part including the title, gif, and sentence intro -->
+    <div class="topIntro">
+        <h1>Generative Art How To</h1>
+        <img src="Photos/GAfishNew.gif" width="400px">
+        <p>For my Generative Art project, I made a program that makes fish 
+        appear when you click in the ocean. It uses different types of Javascript 
+        functions, loops, and conditionals. This webpage will show you how I coded it.
+        </p>
+    </div>
+    
+    <div> <!-- Everything else -->
+        <div class="leftSide">
+            <!-- THE OCEAN -->
+            <h2><u>The Ocean</u></h2>
+            <p style="text-indent: 40px">In order to make the ocean, I used a for loop in the draw function.
+            The draw function looks like <code>draw = function(){</code>. Anything in 
+            it will constantly redraw itself over and over again every frame. Inside it,
+            I used a 'for loop', which looks like <code>for (var</code>... I used this 
+            because the ocean is actaully a blue rectangle. The loop is a chain of 
+            light blue circles that are constanly moving to the right. I could have coded a 
+            set of indivisual circles to constantly move to the right, but a loop is more efficient.</p>
+            
+            <p style="text-indent: 40px"><code>for (var i = 0; i < width; i += 80)</code> controls where on the 
+            y-axis the ovals are. The first part, <code>var i = 0;</code>, is executed before the loop 
+            begins. The second statement, <code> i < width</code>, is the condition for running the 
+            third statement. So in order for <code>i += 80</code>, the variable <code>i</code> 
+            has to be less than the width. The last statement is executed everytime after the loop, as 
+            in the code under/inside it was executed. For example, after line 24, the loop will start from 
+            <code>for (var j = startPlace; j < height; j += 80){</code>. This controls where
+            on the x-axis the ovals move. The computer runs this since <code>j</code> 
+            controls the y-axis. The code underneath it specifically draws the 
+            shape (<code>ellipse</code>) and colors is (<code>fill</code>). The code 
+            <code>noStroke();</code> is needed because without it, it looks like this:
+            <br><img src="Photos/noStroke.png" width="280px"></p>
+            
+            <p style="text-indent: 40px"><code>startPlace++</code> is an increment of my variable <code>startPlace</code>.
+            This is what makes the "waves" actually move.
+            The code below...
+            <code>
+            <br>
+            if (startPlace >= -300){</p>
+            <p style="text-indent: 40px">startPlace = -600;
+            <br>}
+            </code>
+            <br>...programs the ovals so that when they go past a certain point (-300px), the chain will 
+            move back to the left to its orignal starting point off screen (-600px).
+            </p>
+        </div>
+        <!-- Picture of the ocean code -->
+        <div class="rightSide">
+            <br><img src="Photos/oceanOvalsCode.png" width=100%>
+        </div>
+        
+        <hr>
+        
+        <!-- THE FISH -->
+        <div class="leftSide">
+            <h2><u>The Fish</u></h2>
+            <p style="text-indent: 40px">As you can see, the code for the fish is in a function I made called 
+            <code>drawFish = function(x, y){</code>. This was programmed in this function 
+            because when <code>drawFish</code> is called, then the computer will run  
+            the code and the fish will appear. <code>(x, y)</code> is there so that the 
+            fish is drawn where the mouse is.
+            <br>Of the code shown on the right, line 47 to 55 are used to make the fish. 
+            Line 45 to 53 make up the fishes' bodies. Line 54 and 55 program the fish eye.
+            </p>
+            
+        </div>
+        <!-- Picture of the fish body code -->
+        <div class="rightSide">
+            <br><img src="Photos/theFishCode.png">
+        </div>
+        
+        <hr>
+        
+        <!-- ON CLICK -->
+        <div class="leftSide">
+            <h2><u>Click for Fish</u></h2>
+            <p style="text-indent: 40px">In order to make the fish show up when it was clicked, I coded this array,
+            <code>fishStay</code>. This was above the draw function. You can see it in the first image 
+            to the right. Without this array, the background will constantly draw itself over the fish and the 
+            fish will appear to be flashing. This is also why the variable is called "fishStay."</p>
+            
+            <p style="text-indent: 40px">The second right photo shows the for loop made for it. 
+            <code> k = 0;</code> is initiated before the loop starts. Once <code>k < fishStay.length</code>
+            is true, then <code>k</code> will increment by 1 every time the loop is repeated (<code>k++</code>).
+            </p>
+        </div>
+        <!-- Picture of the fishStay variable and drawFish code -->
+        <div class="rightSide">
+            <br><img src="Photos/varstayFish.JPG">
+            <img src="Photos/callingDrawFish.png">
+        </div>
+        
+        <hr>
+        
+        <!-- RESTRICTION IN THE SKY -->
+        <div class="leftSide">
+            <h2><u>Not in the Sky</u></h2>
+            <p style="text-indent: 40px">This block of code shown on the right is a conditional, or an 
+            if statement. I programmed this so that when you click above 300px on the y-axis, a 
+            fish will not be drawn. I did this by using <code>mouseY</code>, which uses the y-axis from 
+            the mouse. The code <code>fishStay.push({x:mouseX + 130, y:mouseY - 50});</code> makes it so 
+            that when the mouse is clicked (<code>.push</code>), a fish is drawn. The numbers 130 and -50 
+            make the fish appear exactly where the mouse cursor is. Without it, it looks like the gif 
+            to the right.
+            </p>
+        </div>
+        <!-- Picture of the if statement and a gif of the inaccurate clicks-->
+        <div class="rightSide">
+            <img src="Photos/notInTheSky.JPG">
+            <img src="Photos/click4Fish.gif" width="300px">
+        </div>
+        
+        <hr>
+        
+        <h2><u>Reflection</u></h2>
+            <h3>Choices</h3>
+            <p style="text-indent: 40px">
+               I had to decide how to make the ocean look like waves. I thought of 
+               how ovals could easily make it look right, so I make loop of them that 
+               traveled down the screen.
+            </p>
+            <h3>What I Will Remember</h3>
+            <p style="text-indent: 40px">
+                I will remember how to make a loop of shapes move in a ceratin direction. 
+                I will remember because I helped other people animate their projects to 
+                move horizontally across the screen. I had practice from animating snow 
+                fall in another project. This time, I got help and figured how to make 
+                the shapes move to the right rather than down.
+            </p>
+            <h3>If I Had More Time</h3>
+            <p style="text-indent: 40px">
+                If I had more time I would make the fish turn different colors and 
+                make it so that the fish disappear and the game resets.
+            </p>
+
+    </div>
+    
+    
+</body>
+</html>

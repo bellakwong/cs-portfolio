@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Open Sans;
+    background: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0567/6689/rshark_19_shop_preview.png);
+    border: 5px dotted white;
+    border-radius:1px;
+    margin: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
