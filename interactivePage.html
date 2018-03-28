@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Generatorator</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: #ffffcc;
+    }
+
+    #fictionDropDown{
+        text-align: center;
+        display: none;        /*line 17-19 center the drop down menu*/
+        margin-left: auto;    /*make it into a block element*/
+        margin-right: auto;   /*make it into a block element*/
+    }
+    
+    #nonFicDropDown{
+        text-align: center;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+    <h1>Book Generator</h1>
+    <p>Do you not know what book to read? Type "fiction" or "nonfiction," select a genre, and a book will be chosen for you.</p>
+    <input id="ficOrNonFic">
+    <button id="submitFictionType">Enter</button>
+    <br>
+    
+    <!-- Fiction -->
+    <br>
+    <select id="fictionDropDown">   <!-- Creates the drop down menu -->
+        <option>Fantasy</option>    <!-- Adds the genre choices -->
+        <option>Science Fiction</option>
+        <option>Drama</option>
+        <option>Graphic Novel</option>
+    </select>
+    
+    <!-- Nonfiction -->
+    <br>
+    <select id="nonFicDropDown">
+        <option>Biography</option>
+        <option>Historical</option>
+        <option>Science</option>
+    </select>
+    <br>
+    
+    <div id="book">Your book will appear here!</div>
+    
+    
+    <script type="text/javascript" src="interactivePage.js"></script>
+</body>
+</html>

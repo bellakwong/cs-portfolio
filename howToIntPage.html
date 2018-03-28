@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="howToIntPage.css" type="text/css" />
+    <title>How To - Book Generator</title>
+</head>
+<body>
+    <!-- Intro -->
+    <div class="top">
+        <h1>How To - Book Generator</h1>
+        <p>For my project I coded a book generator that recommends a novel based on
+        the user's genre choice. I used HTML and JavaScript.</p>
+        <img src="Photos/bookgen.gif" width="600px">
+    </div>
+    <!-- Fiction or Nonfiction -->
+    <div class="leftSide">
+        <h2>Fiction or Nonfiction</h2>
+        <p style="text-indent: 40px">In my project, the user starts by typing in "fiction" or "nonfiction" into the
+        search bar. To create the search bar and button, I used HTML. I programmed the code 
+        <code>&lt;input id=&quot;ficOrNonFic&quot;&gt;</code> and gave it an id of "ficOrNonFic." 
+        The button is called by the code 
+        <code>&lt;button id=&quot;submitFictionType&quot;&gt; Enter &lt;/button&gt;</code>. The "Enter" 
+        part of the line of code is what the button text displays. Both attributes will be useful when 
+        coding in JavaScript.
+        </p>
+        <p style="text-indent: 40px"> In JavaScript, I started by declaring each id from the 
+        HTML file as variables. To do this, I used <code>document.getElementById</code>. 
+        The "Enter" button is "listening" for the event of a user's click. When they do click 
+        enter, the computer processes the input that the user typed. Using the if/else statement, if it was 
+        "fiction" or "Fiction" the fiction drop down menu will appear. I wanted it to be less case-sensitive, 
+        so I added two choices. If the user input was something else (hypothetically, "nonfiction"), 
+        the nonfiction drop down will appear.
+        </p>
+    </div>
+    <div class="rightSide">
+        <br>
+        <img src="Photos/htmlFicOrNon.png">
+        <img src="Photos/jsFicOrNon.png">
+    </div>
+    
+    <hr>
+    
+    <!-- Drop Down Menus -->
+    <div class="leftSide">
+        <h2>Drop Down Menus</h2>
+        <p style="text-indent: 40px"> Depending on if you picked fiction or nonfiction, a different 
+        drop down menu will appear. These can be seen to the right on the HTML file. The 
+        option tags program the different genres. For example, if you decided to type fiction, you 
+        would have the options of fantasy, sci-fi, drama, or graphic novel. Your selection will be 
+        stored in the JavaScript variable ficType, since it is equal to <code>ficOrNonFic.value</code>, 
+        or whatever the user selected in the drop down menu. Say you clicked science fiction. The computer 
+        will run through the if statements in <code>fictionDropDown.addEventListener(&quot;click&quot;, function(){</code>.
+        If ficType, or science fiction, is equal to the choice "Science Fiction," the book Flowers for Algernon 
+        will be generated. The <code>.link()</code> attaches a Goodreads link to the string, since unlike HTML, you can't 
+        use hyperlinks in JavaScript. The code is very similar for the nonfiction books.
+        </p>
+        <p style="text-indent: 40px">
+        I decided to use these fiction books in particular because they are some of my favorites. (They are 
+        so good that I cried while reading 3/4 of them haha.) The nonfiction, however, I have never read, 
+        but I have heard of them before. <i>Washington's Spies: the Story of America's First Spy Ring</i> was 
+        an easy choice for me to make because my favorite Netflix series <i>TURN: Washington's Spies</i> is heavily 
+        based on the book.
+        </p>
+    </div>
+    
+    <div class="rightSide">
+        <img src="Photos/dropdowns.png">
+        <img src="Photos/ficDropDown.png" width="650px">
+    </div>
+    
+    <hr>
+    
+</body>
+</html>

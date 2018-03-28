@@ -1,0 +1,23 @@
+body{
+    font-family: Open Sans;
+    margin: 100px;
+    background-color: #ffffe9;
+}
+
+.top{
+    text-align: center;
+}
+
+.leftSide{
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    padding: 7px 15px;
+}
+
+.rightSide{
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    padding: 7px 15px;
+}

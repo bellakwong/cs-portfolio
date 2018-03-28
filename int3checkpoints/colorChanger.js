@@ -28,9 +28,9 @@ newColor.addEventListener("keyup", function(event){
 
 /*an idea. ignore below. (I wanted it so that when you change the background to 
 black, the text of "Hello, Darkness, my old friend" to come up (in an alert or in white text).)
-newColor.addEventListener(document.body.style.backgroundColor === "black", function(darkness){
-    if(document.body.style.backgroundColor === "black"){
-        javascript:alert("Hello darkness my old friend");
-    }
-});
 */
+// newColor.addEventListener(document.body.style.backgroundColor === "black", function(darkness){
+//     if(document.body.style.backgroundColor === "black"){
+//         alert("Hello darkness my old friend");
+//     }
+// });
