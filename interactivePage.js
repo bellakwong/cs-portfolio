@@ -1,4 +1,4 @@
-//Creates variables and saves DOM elemenhts to each
+//Creates variables and saves DOM elements to each
 var ficOrNonFic = document.getElementById("ficOrNonFic");
 var submitFictionType = document.getElementById("submitFictionType");
 var fictionDropDown = document.getElementById("fictionDropDown");

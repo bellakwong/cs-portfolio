@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="howToIntPage.css" type="text/css" />
+    <link rel="stylesheet" href="intWebNavBar.css" type="text/css" />
     <title>How To - Book Generator</title>
 </head>
 <body>
+    <!-- Nav Bar -->
+    <ul class="navbar">
+        <a href="index.html"> <li>About Me</li> </a>
+        <a href="howtoaboutme.html"><li>How To - About Me</li></a>
+        <a href="generativeArt.html"><li>Generative Art</li></a>
+        <a href="howToGenArt.html"><li>How To - Generative Art</li></a>
+        <a href="interactivePage.html"><li>Interactive Page</li></a>
+        <a href="howToIntPage.html"><li>How To - Interactive Page</li></a>
+    </ul>
+    
     <!-- Intro -->
     <div class="top">
         <h1>How To - Book Generator</h1>
@@ -27,12 +38,13 @@
         coding in JavaScript.
         </p>
         <p style="text-indent: 40px"> In JavaScript, I started by declaring each id from the 
-        HTML file as variables. To do this, I used <code>document.getElementById</code>. 
+        HTML file as variables. To do this, I used the statement <code>document.getElementById</code>. 
         The "Enter" button is "listening" for the event of a user's click. When they do click 
         enter, the computer processes the input that the user typed. Using the if/else statement, if it was 
         "fiction" or "Fiction" the fiction drop down menu will appear. I wanted it to be less case-sensitive, 
         so I added two choices. If the user input was something else (hypothetically, "nonfiction"), 
-        the nonfiction drop down will appear.
+        the nonfiction &lt;select&gt; will appear. Another way I could have programmed this was to use another 
+        if statement and make the parameters so that the user would have to type "nonfiction." 
         </p>
     </div>
     <div class="rightSide">
@@ -50,28 +62,40 @@
         drop down menu will appear. These can be seen to the right on the HTML file. The 
         option tags program the different genres. For example, if you decided to type fiction, you 
         would have the options of fantasy, sci-fi, drama, or graphic novel. Your selection will be 
-        stored in the JavaScript variable ficType, since it is equal to <code>ficOrNonFic.value</code>, 
-        or whatever the user selected in the drop down menu. Say you clicked science fiction. The computer 
-        will run through the if statements in <code>fictionDropDown.addEventListener(&quot;click&quot;, function(){</code>.
+        stored in the JavaScript variable ficType, since it is equal to <code>ficOrNonFic.value</code>. The 
+        .value at the end of ficOrNotFic stores whatever the user picked in the select menu. Say you clicked science 
+        fiction. The computer will run through the if statements in <code>fictionDropDown.addEventListener(&quot;click&quot;, function(){</code>.
         If ficType, or science fiction, is equal to the choice "Science Fiction," the book Flowers for Algernon 
-        will be generated. The <code>.link()</code> attaches a Goodreads link to the string, since unlike HTML, you can't 
+        will be returned. The <code>.link()</code> attaches a Goodreads link to the string, since unlike HTML, you can't 
         use hyperlinks in JavaScript. The code is very similar for the nonfiction books.
         </p>
         <p style="text-indent: 40px">
         I decided to use these fiction books in particular because they are some of my favorites. (They are 
-        so good that I cried while reading 3/4 of them haha.) The nonfiction, however, I have never read, 
+        so good that I cried while reading 3 of them haha.) The nonfiction, however, I have never read, 
         but I have heard of them before. <i>Washington's Spies: the Story of America's First Spy Ring</i> was 
         an easy choice for me to make because my favorite Netflix series <i>TURN: Washington's Spies</i> is heavily 
-        based on the book.
+        based on the book. 
         </p>
     </div>
     
     <div class="rightSide">
         <img src="Photos/dropdowns.png">
-        <img src="Photos/ficDropDown.png" width="650px">
+        <img src="Photos/ficDropDown.png" width="630px">
     </div>
     
     <hr>
+    
+    <!-- Reflection -->
+    <div class="bottom">
+        <h2>Reflection</h2>
+        <p style="text-indent: 40px">
+        If I had more time I would add the synopsis and a picture of each book picture. I would also 
+        like to learn how to make it so that the link opens up in a new tab. Overall, this project has 
+        changed my view of user interaction on webpages. I never thought of the computer returning text to fit 
+        the user's needs as webpage interaction until now. To me, games and navagation bars are what I would 
+        usually think of.
+        </p>
+    </div>
     
 </body>
 </html>

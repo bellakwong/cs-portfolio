@@ -1,7 +1,7 @@
 body{
     font-family: Open Sans;
-    margin: 100px;
-    background-color: #ffffe9;
+    margin: 50px;
+    background-color: #ffffdd;
 }
 
 .top{
@@ -20,4 +20,8 @@ body{
     width: 46%;
     vertical-align: top;
     padding: 7px 15px;
+}
+
+.bottom{
+    text-align: center;
 }
